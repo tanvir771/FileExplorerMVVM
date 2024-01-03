@@ -16,9 +16,9 @@ namespace FileExplorerMVVM.ViewModels
 {
     public class MainViewModel
     {
-        public ObservableCollection<File> files { get; set; }
+        public ObservableCollection<File>? files { get; set; }
         public string? ImageURI;
-        private FileManager myFileManager { get; set; }
+        private FileManager? myFileManager { get; set; }
 
         public ICommand? fileButtonClicked { get; }
 
@@ -27,7 +27,6 @@ namespace FileExplorerMVVM.ViewModels
             myFileManager = new FileManager();
             files = myFileManager.getFiles(@"E:\");
             fileButtonClicked = new RelayCommand(FileClickedMethod, FileClickedCanExcecute);
-            
         }
 
         private void FileClickedMethod(object sender) {

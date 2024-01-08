@@ -9,11 +9,6 @@ namespace FileExplorerMVVM.Models
 {
     public class Drive
     {
-        // Attributes
-        private string? _name;
-        private string? _filePath;
-
-
         // Properties
         public string? Name { get; set; }
         public string? FilePath { get; set; }

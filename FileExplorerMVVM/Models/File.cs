@@ -14,7 +14,9 @@ namespace FileExplorerMVVM.Models
     {
         private string? fileName;
         private string? filePath;
+        private string? originPath;
         public string? imageURI;
+        
 
         public ICommand? fileButtonClicked;
 
@@ -30,6 +32,11 @@ namespace FileExplorerMVVM.Models
             set { filePath = value; }
         }
 
+        public string? OriginPath 
+        {
+            get { return originPath; }
+            set { originPath = value; }
+        }
         public string? ImageURI
 		{
 			get { return imageURI; }

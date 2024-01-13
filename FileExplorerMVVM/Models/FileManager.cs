@@ -15,12 +15,19 @@ namespace FileExplorerMVVM.Models
     public class FileManager : INotifyCollectionChanged
     {
         private ObservableCollection<File> files = new ObservableCollection<File>();
+        private Navigation _navigation = new Navigation();
+        public string RootDirectory { get; set; }
 
         public event NotifyCollectionChangedEventHandler? CollectionChanged;
 
         public ObservableCollection<File> getFiles(string path) {
             files.Clear();
+
             string[] filesString = Directory.GetFileSystemEntries(path);
+
+            RootDirectory = Path.GetDirectoryName(path);
+            _navigation.addBackwardsNav(RootDirectory);
+            Debug.WriteLine("current is " + RootDirectory);
 
             foreach (string file in filesString)
             {
@@ -43,6 +50,11 @@ namespace FileExplorerMVVM.Models
             OnCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
 
             return files;
+        }
+
+        public Navigation getNavigationInfo()
+        {
+            return _navigation;
         }
 
         protected virtual void OnCollectionChanged(NotifyCollectionChangedEventArgs e) {

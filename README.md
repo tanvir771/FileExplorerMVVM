@@ -1,6 +1,7 @@
 # FileExplorerMVVM
 <body>
     <h1>File Explorer Desktop App | C#, WPF</h1>
+    <img src="FileExplorerMVVM/Resources/File_Explorer_SS.png" alt="File Explorer" />
     <p>Welcome to the  development of the File Explorer Desktop App project! This project involves the creation of a feature-rich File Explorer using C#, with WPF (.NET) and XAML, designed to provide users with a powerful and intuitive file management experience.</p>
     <h2>Project Highlights</h2>
     <ul>

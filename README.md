@@ -1,7 +1,7 @@
 # FileExplorerMVVM
 <body>
-    <h1>File Explorer Desktop App (Ongoing) | C#, WPF</h1>
-    <p>Welcome to the ongoing development of the File Explorer Desktop App project! This project involves the creation of a feature-rich File Explorer using C#, with WPF (.NET) and XAML, designed to provide users with a powerful and intuitive file management experience.</p>
+    <h1>File Explorer Desktop App | C#, WPF</h1>
+    <p>Welcome to the  development of the File Explorer Desktop App project! This project involves the creation of a feature-rich File Explorer using C#, with WPF (.NET) and XAML, designed to provide users with a powerful and intuitive file management experience.</p>
     <h2>Project Highlights</h2>
     <ul>
         <li><strong>Technology Stack:</strong> Developed using C# with WPF and XAML, leveraging the capabilities of the .NET framework for building Windows desktop applications.</li>
@@ -10,7 +10,7 @@
     </ul>
     <h2>Current Features</h2>
     <ul>
-        <li><strong>File Management:</strong> Provides essential file management functionalities, including file and folder creation, deletion, and navigation.</li>
+        <li><strong>File Management:</strong> Provides essential file management functionalities, and navigation.</li>
         <li><strong>MVVM Implementation:</strong> Utilizes the MVVM pattern to maintain a clear separation between the user interface and the underlying logic.</li>
     </ul>
     <h2>Future Enhancements</h2>
